@@ -6,15 +6,23 @@ dotenv.config();
 import routes from './routes/index.js';
 
 const app = express();
-
 const PORT = process.env.PORT || 3001;
+console.log(`This is a new server`)
 
 // TODO: Serve static files of entire client dist folder
+// MM added below:
+app.use(express.static('../client/dist'));
 
 // TODO: Implement middleware for parsing JSON and urlencoded form data
+// MM added below:
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 // TODO: Implement middleware to connect the routes
 app.use(routes);
+// MM added below: 
+
 
 // Start the server on the port
 app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
