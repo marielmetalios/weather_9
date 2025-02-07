@@ -6,12 +6,12 @@ const __dirname = path.dirname(__filename);
 const router = Router();
 
 // TODO: Define route to serve index.html
-// mm edits below: get all linking/ handles unmatched routing...
-// then the dirname tells us where the file is located
+// mm edits below: get  linking with / 
+// dirname tells us where the file is located
 // then we actually send the HTML file to the client so the front end can load and user can see page
-app.get('*', (_req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
-  });
+router.get('*', (_req, res) => {
+  res.sendFile(path.join(__dirname, '../../../client/dist/index.html'));
+});
 
 
 export default router;

@@ -1,7 +1,5 @@
 import { Router } from 'express';
 const router = Router();
-// mar added:
-// already npm installed dotenv 
 require('dotenv').config()
 console.log(`Hello ${process.env.HELLO}`);
 
