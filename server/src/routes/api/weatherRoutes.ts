@@ -7,11 +7,6 @@ import WeatherService from '../../service/weatherService.js';
 
 // TODO: POST Request with city name to retrieve weather data
 // MAR NOTES:
-// creating a route that listens for POST requests at an endpoint.
-// will send a city name in the request body
-// then fetch the weather data from the API
-// then save the search history...
-// mm edited below
 router.post('/city',  (req, res) => {
   // TODO: GET weather data from city name
 

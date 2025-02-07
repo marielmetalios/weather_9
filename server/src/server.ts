@@ -14,9 +14,8 @@ console.log(`This is a new server`)
 app.use(express.static('../client/dist'));
 
 // TODO: Implement middleware for parsing JSON and urlencoded form data
-// MM added below:
 //MM notes:
-//The `express.json()` middleware attaches incoming json data from requests to the `req.body` property.`express.urlencoded()` middleware works similarly, but for form encoded data.
+// MM added below: the `express.json()` middleware attaches incoming json data from requests to the `req.body` property.`express.urlencoded()` middleware works similarly, but for form encoded data.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
