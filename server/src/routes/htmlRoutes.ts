@@ -9,7 +9,7 @@ const router = Router();
 // mm edits below: get  linking with / 
 // dirname tells us where the file is located
 // then we actually send the HTML file to the client so the front end can load and user can see page
-router.get('*', (_req, res) => {
+router.get('*', (_req: Request, res: Response) => {
   res.sendFile(path.join(__dirname, '../../../client/dist/index.html'));
 });
 

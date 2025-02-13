@@ -1,7 +1,5 @@
 import { Router } from 'express';
 const router = Router();
-require('dotenv').config()
-console.log(`Hello ${process.env.HELLO}`);
 
 import weatherRoutes from './weatherRoutes.js';
 
