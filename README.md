@@ -5,3 +5,6 @@ This is a weather application that retrieves data from OPen Weather (https://ope
 
 Your search history will also be logged.
 
+## Collaboration
+This exercise was completed with assistance from both Columbia's EdX Xpert Learning Assistant and course tutors.
+
