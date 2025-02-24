@@ -61,11 +61,11 @@ class HistoryService {
       .then((cities) => {
         // Check if the city already exists before adding it
         if (cities.find((c) => c.name === city)) {
-          return newCity;
+          return cities;
         }
         return [...cities, newCity];
       })
-      .then((updatedCities) => this.write(updatedCities[])) // add to db.json
+      .then((updatedCities) => this.write(updatedCities)) // add to db.json
       .then(() => newCity); // return the new city!
   }
 
